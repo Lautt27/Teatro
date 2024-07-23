@@ -123,46 +123,13 @@ body {
     }
 
 }
-/*Obras*/
+/*Body*/
 
-.img-obra {
-    width: 100%;
-}
-
-/*Proximos Shows*/
-
-.show-container{
-    background-color: rgb(211, 211, 211);
+.history h2{
     text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
 }
-.productos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 10px;
-}
-.caja_productos{
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    position: relative;
-    width: 25%;
-    flex-wrap: wrap;
-    font-size: 20px;
-    margin-bottom: 3%;
-}
-.caja_productos img{
-    max-width: 320px;
-    height: auto;
-    box-shadow: 0px 0px 10px black;
-    border-radius: 5px;
-    background-color: rgb(0, 0, 0);
-    transition: all 0.3s;
-}
-.caja_productos img:hover{
-    transform: scale(1.03);
-}
-
 
 /*Footer*/
 .footer {

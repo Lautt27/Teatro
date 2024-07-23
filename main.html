@@ -12,7 +12,7 @@
 
         <div class="back">
             <div class="menu container">
-                <img src="images/header/logo.png" class="logo-img" alt="">
+                <a href="main.html"><img src="images/header/logo.png" class="logo-img" alt=""></a>
                 <input type="checkbox" id="menu"/>
                 <label for="menu">
                     <img src="images/header/barras.png" class="menu-icono" alt="">
@@ -20,9 +20,9 @@
                 <nav class="navbar">
                     <ul>
                         <li><a href="main.html">Inicio</a></li>
-                        <li><a href="#">Cartelera</a></li>
-                        <li><a href="#">Sobre Nosotros</a></li>
-                        <li><a href="#">¿Cómo llegar?</a></li>
+                        <li><a href="#shows">Cartelera</a></li>
+                        <li><a href="aboutus.html">Sobre Nosotros</a></li>
+                        <li><a href="https://maps.app.goo.gl/oSE14DjiAHJzYNKk7">¿Cómo llegar?</a></li>
                     </ul>
                 </nav>
             </div>
@@ -37,10 +37,10 @@
 
     </div>
 
-    <div class="shows">
+    <div class="shows" id="shows">
         <div class="show-container">
             <br>
-            <h2>Shows Destacados</h2>
+            <h2>Próximos Shows</h2>
             <section class="productos">    
                 <div class="caja_productos">
                       <div class="foto_producto">
@@ -70,31 +70,76 @@
         </div>
     </div>
 
-
+    <div class="shows">
+        <div class="show-container">
+            <br>
+            <h2>Shows Destacados</h2>
+            <section class="productos">    
+                <div class="caja_productos">
+                      <div class="foto_producto">
+                          <img src="images/shows/obra5.jpg" alt="">
+                      </div>
+                      <div class="info_producto">
+                          <p class="title_product">Lisandro Aristimuño</p>
+                      </div>
+                </div>
+                <div class="caja_productos">
+                      <div class="foto_producto">
+                          <img src="images/shows/obra6.jpg" alt="">
+                      </div>
+                      <div class="info_producto">
+                          <p class="title_producto">Soy Rada Taran</p>
+                      </div>
+                </div>
+                <div class="caja_productos">
+                      <div class="foto_producto">
+                          <img src="images/shows/obra7.jpg" alt="">
+                      </div>
+                      <div class="info_producto">
+                          <p class="title_producto">El Principito</p>
+                      </div>
+                </div>
+              </section>
+        </div>
+    </div>
 
     <footer class="footer">
-
-        <div class="group-1">
-            <div class="box">
-                <h2>Sobre Nosotros</h2>
-                <p>Historia</p>
-            </div>
-            <div class="box">
-                <h2>Redes Sociales</h2>
-                <div class="red-social">
-                    <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
-                    <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+                <div class="socialIcons">
+                    <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a>
+                    <a href="https://www.x.com/"><i class="fa fa-x"></i></a>
+                    <a href="https://www.whatsapp.com/"><i class="fa fa-whatsapp"></i></a>
+                    <a href="https://www.gmail.com/"><i class="fa fa-envelope"></i></a>
                 </div>
+            <div class="footerNav">
+                <ul>
+                    <li><a href="main.html">Inicio</a></li>
+                    <li><a href="#">Cartelera</a></li>
+                    <li><a href="aboutus.html">Sobre Nosotros</a></li>
+                    <li><a href="https://maps.app.goo.gl/oSE14DjiAHJzYNKk7">¿Cómo llegar?</a></li>
+                </ul>
             </div>
-            <div class="box2">
-                <h2>Contacto</h2>
-                <p><a href="#" class="fa fa-whatsapp"></a> 11 - 5018 - 4622</p>
-                <p><a href="#" class="fa fa-envelope"></a> Laucasal27@gmail.com </p>      
-            </div>
-        <div class="group-2">
+        <div class="footer-bottom">
             <small>&copy; 2024 <b>Teatro Opera</b> - Todos los Derechos Reservados.</small>  
         </div>
 
     </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+    
+                const target = document.querySelector(this.getAttribute('href'));
+                const offset = 0; // Ajusta el offset según necesites
+    
+                window.scrollTo({
+                    top: target.offsetTop - offset,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+    
 </body>
 </html>
