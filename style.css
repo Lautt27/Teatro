@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background: linear-gradient(
+        90deg,
+        rgb(245, 245, 245) 25%,
+        rgb(245, 245, 245) 75%);
+        font-family: 'Nunito', sans-serif;     
+}
+
+/*Header*/
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+
+}
+
+.back {
+    padding: 32px 0;
+    background-color: rgb(245, 245, 245);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.menu {
+    position: absolute; 
+    top: -5px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.logo-img {
+    width: 90px;
+    margin-top: -10px;
+}
+
+.menu-icono {
+    width: 27px;
+}
+
+.menu label{
+    cursor: pointer;
+    margin-top: -15px;
+    display: none;
+}
+
+.logo {
+    font-size: 24px;
+    color: black;
+    text-transform: uppercase;
+}
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a{
+    font-size: 18px;    
+    padding: 20px;
+    color: black;
+    display: block;
+}
+
+.menu .navbar ul li a hover{
+    transform: scale(1.1);
+}
+
+#menu {
+    display: none;
+}
+
+#menu label{
+    cursor: pointer;    
+    display: none;
+}
+
+@media(max-width:991px) {
+
+    .menu {
+        padding: 30px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .back {
+        padding: 40px 0;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: black;
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+
+    .logo-img {
+        width: 90px;
+        margin-top: -35px;
+    }
+
+}
+/*Obras*/
+
+.img-obra {
+    width: 1309px;
+    height: 540px;
+}
+
+/*Proximos Shows*/
+
+.show-container{
+    background-color: rgb(245, 245, 245);
+    text-align: center;
+}
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 10px;
+}
+.caja_productos{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    position: relative;
+    width: 25%;
+    flex-wrap: wrap;
+    font-size: 20px;
+}
+.caja_productos img{
+    max-width: 320px;
+    height: auto;
+    box-shadow: 0px 0px 10px black;
+    border-radius: 5px;
+    background-color: rgb(0, 0, 0);
+    transition: all 0.3s;
+}
+.caja_productos img:hover{
+    transform: scale(1.03);
+}
+.link-2{
+    text-decoration: none;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50px;
+    color: rgb(255, 255, 255);
+    padding: 4px 15px;
+    transition: all 0.3s;
+}
+
+/*Footer*/
+.footer {
+    padding: 32px 0;
+    background-color: rgb(245, 245, 245);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+}
