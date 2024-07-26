@@ -21,7 +21,7 @@
                 <nav class="navbar">
                     <ul>
                         <li><a href="main.html">Inicio</a></li>
-                        <li><a href="#shows">Cartelera</a></li>
+                        <li><a href="main.html">Cartelera</a></li>
                         <li><a href="aboutus.html">Sobre Nosotros</a></li>
                         <li><a href="https://maps.app.goo.gl/oSE14DjiAHJzYNKk7">¿Cómo llegar?</a></li>
                     </ul>
@@ -70,30 +70,6 @@
         <small>&copy; 2024 <b>Teatro Opera</b> - Todos los Derechos Reservados.</small>  
     </div>
     </footer>
-
-    <script>
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-    
-                const targetId = this.getAttribute('href');
-                const targetElement = document.querySelector(targetId);
-                const offset = 0; // Ajusta el offset según necesites
-    
-                if (targetElement) {
-                    // Si el elemento objetivo existe en la página actual
-                    window.scrollTo({
-                        top: targetElement.offsetTop - offset,
-                        behavior: 'smooth'
-                    });
-                } else {
-                    // Si el elemento no existe en la página actual, redirige a main.html
-                    window.location.href = 'main.html';
-                }
-            });
-        });
-    </script>
-    
 
 </body>
 </html>
