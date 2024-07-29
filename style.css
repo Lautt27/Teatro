@@ -74,7 +74,7 @@ body.dark .menu-icono {
     text-transform: uppercase;
 }
 body.dark .logo-img {
-    content: url('images/header/logo2.png'); /* Cambia la ruta a la imagen para el modo oscuro */
+    content: url('images/header/logo2.png');
 }
 
 .menu .navbar ul li{
