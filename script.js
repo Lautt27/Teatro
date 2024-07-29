@@ -14,7 +14,21 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 const btnSwitch = document.querySelector('#switch');
 
+document.addEventListener('DOMContentLoaded', () => {
+    if (localStorage.getItem('darkMode') === 'enabled') {
+        document.body.classList.add('dark');
+        btnSwitch.classList.add('active');
+    }
+});
+
 btnSwitch.addEventListener('click', () => {
     document.body.classList.toggle('dark');
+
     btnSwitch.classList.toggle('active');
+
+    if (document.body.classList.contains('dark')) {
+        localStorage.setItem('darkMode', 'enabled');
+    } else {
+        localStorage.setItem('darkMode', 'disabled');
+    }
 });
