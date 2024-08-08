@@ -345,196 +345,53 @@ body.dark .dropdown-content a:hover {
     width: 100%;
 }
 
-.history {
-    max-width: 1300px;
-    margin: 0 auto;
+/* Estilos generales para las secciones */
+.history, .history2 {
     padding: 20px;
-    margin-top: 15px;
-    margin-bottom: 20px;
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
-    text-align: center;
-}
-body.dark .history {
-    background-color: #1e1e1e;
+    background-color: #fff; 
+    border-radius: 8px; 
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1); 
+    max-width: 45%;
+    min-width: 45%;
+    line-height: 1.6; 
+    box-sizing: border-box; 
+    margin: 0; 
 }
 
-.history h2{
-    text-align: center;
-    margin-bottom: 15px;
-    font-size: 22px;
-    color: #333;
+.history {
+    border-left: 5px solid #000000; 
 }
 
 .history2 {
-    max-width: 1300px;
-    margin: 0 auto;
-    padding: 20px;
-    margin-bottom: 20px;
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
-    text-align: center;
-}
-body.dark .history2 {
-    background-color: #1e1e1e;
+    border-left: 5px solid #000000; 
 }
 
-.history2 h2{
-    text-align: center;
-    margin-bottom: 15px;    
-    margin-top: -20px;
-    font-size: 22px;
-    color: #333;
-}
-body.dark h2{
-    color: white;
-}
-body.dark .history{
-    color: white;
-}
-body.dark .history2{
-    color: white;
+.container-history {
+    margin: 3em;
+    display: flex; 
+    justify-content: space-between; 
+    flex-wrap: wrap; 
 }
 
-/* ---------------------------- Footer ---------------------------- */
-
-.footer {
-    padding: 32px 0;
-    background-color: rgb(245, 245, 245);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    text-align: center;
-}
-body.dark .footer {
-    background-color: #010101;
+/* Estilos para los encabezados */
+.history h2, .history2 h2 {
+    color: #333; 
+    font-size: 1.8em;
+    margin-top: 0; 
+    margin-bottom: 20px; 
 }
 
-.footercontainer {
-    width: 100%;
-    padding: 70px 30px 20px;
+/* Estilos para los párrafos */
+.history p, .history2 p {
+    font-size: 1em; 
+    color: #555; 
+    margin: 0;
 }
 
-.socialIcons {
-    display: flex;
-    justify-content: center;
+.history p, .history2 p {
+    margin-bottom: 15px;
 }
 
-.socialIcons a{
-    text-decoration: none;
-    padding: 5px;
-    margin-right: 10px;
-}
-
-.socialIcons a i{
-    font-size: 1.5em;
-    color: rgb(0, 0, 0);
-    opacity: 0.9;
-}
-body.dark .socialIcons a i {
-    color: white;
-}
-
-.footerNav {
-    margin: 5px 0;
-}
-
-.footerNav ul{
-    display: flex;
-    justify-content: center;
-}
-
-.footerNav ul li{
-    margin: 20px;
-    color: black;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-.footerNav ul li a{
-    color: black; 
-    text-decoration: none; 
-}
-body.dark .footerNav ul li a {
-    color: white;
-}
-
-.footer-bottom {
-    font-size: 18px;
-}
-
-body.dark .footer-bottom {
-    color: white;
-}
-
-/* ---------------------------- Footer ---------------------------- */
-
-.footer {
-    padding: 32px 0;
-    background-color: rgb(245, 245, 245);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    text-align: center;
-}
-body.dark .footer {
-    background-color: #010101;
-}
-
-.footercontainer {
-    width: 100%;
-    padding: 70px 30px 20px;
-}
-
-.socialIcons {
-    display: flex;
-    justify-content: center;
-}
-
-.socialIcons a{
-    text-decoration: none;
-    padding: 5px;
-    margin-right: 10px;
-}
-
-.socialIcons a i{
-    font-size: 1.5em;
-    color: rgb(0, 0, 0);
-    opacity: 0.9;
-}
-body.dark .socialIcons a i {
-    color: white;
-}
-
-.footerNav {
-    margin: 5px 0;
-}
-
-.footerNav ul{
-    display: flex;
-    justify-content: center;
-}
-
-.footerNav ul li{
-    margin: 20px;
-    color: black;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-.footerNav ul li a{
-    color: black; 
-    text-decoration: none; 
-}
-body.dark .footerNav ul li a {
-    color: white;
-}
-
-.footer-bottom {
-    font-size: 18px;
-}
-
-body.dark .footer-bottom {
-    color: white;
-}
 
 /* ---------------------------- Footer ---------------------------- */
 
@@ -545,7 +402,7 @@ body.dark .footer-bottom {
     text-align: center;
 }
 body.dark .footer {
-    background-color: #050505;
+    background-color: #010101;
 }
 
 .footercontainer {
