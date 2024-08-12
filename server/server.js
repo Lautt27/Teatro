@@ -5,12 +5,11 @@ const bodyParser = require('body-parser');
 const path = require('path');
 const app = express();
 
-// Configura la conexión a PostgreSQL
 const pool = new Pool({
     user: 'postgres',
     host: 'localhost',
-    database: 'data',
-    password: '23823752',
+    database: '####',
+    password: '####',
     port: 5432
 });
 
