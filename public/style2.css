@@ -9,7 +9,10 @@
 }
 
 body {
-        background-color: #ffffff;
+    background: linear-gradient(
+        90deg,
+        rgb(245, 245, 245) 25%,
+        rgb(245, 245, 245) 75%);
         font-family: 'Nunito', sans-serif;     
         transition: .3s ease all;
 
@@ -31,10 +34,9 @@ body {
 body.dark .top-bar{
     background-color: #050505;
     border-bottom: 1px solid #666666;
-    transition: .4s ease all;
 }
 
-/* Estilos para los enlaces*/
+/* Estilos para los enlaces */
 .top-bar-item {
     color: #333; 
     text-decoration: none;
@@ -89,7 +91,7 @@ body.dark .back {
     right: 0;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; /* Espacio entre el logo y el menú */
     padding: 0 10px;
     height: 100%;
     z-index: 1000;
@@ -102,7 +104,7 @@ body.dark .back {
 .logo-img {
     width: 8em;
     transition: content 0.3s ease; 
-    margin-right: 9em; 
+    margin-right: 9em; /* Espacio entre el logo y el menú */
 }
 body.dark .logo-img {
     filter: invert(1);
@@ -115,8 +117,10 @@ body.dark .logo-img {
 body.dark .menu-icono {
     color: white;
 }
+.head-icon-1 {
+    display: none;
+}
 
-/* Estilos para el label del menú */
 .menu label {
     cursor: pointer;
     margin-top: 0; 
@@ -146,7 +150,7 @@ body.dark .menu-icono {
     position: relative;
 }
 
-/* Enlaces */
+/* Estilos de los enlaces */
 .menu .navbar ul li a {
     font-size: 16px;    
     padding: 5px;
@@ -188,19 +192,20 @@ body.dark .dropdown .dropbtn {
     color: white;
 }
 
+/* Línea debajo del botón cuando se pasa el cursor */
 .dropdown:hover .dropbtn {
-    border-bottom: 2px solid #111111;
+    border-bottom: 2px solid #111111; 
 }
 
 body.dark .dropdown:hover .dropbtn {
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid white; 
 }
 
 /* Estilo para el contenido del menú desplegable */
 .dropdown-content {
     display: none;
     position: absolute;
-    top: calc(100% + 2px); 
+    top: calc(100% + 2px);
     left: 0;
     background-color: rgb(245, 245, 245); 
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
@@ -334,260 +339,59 @@ body.dark .dropdown-content a:hover {
     color: #000000;
 }
 
-/* ---------------------------- Banner ---------------------------- */
+/* ---------------------------- Body ---------------------------- */
 
-.banner .img-obra {
+.img-obra {
     width: 100%;
 }
 
-/* ---------------------------- Próximos Shows ---------------------------- */
-
-.show-container {
-    position: relative;
-    max-width: 1200px;
-    margin: 0 auto;
+/* Estilos generales para las secciones */
+.history, .history2 {
     padding: 20px;
+    background-color: #fff; 
+    border-radius: 8px; 
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1); 
+    max-width: 45%;
+    min-width: 45%;
+    line-height: 1.6; 
+    box-sizing: border-box; 
+    margin: 0; 
 }
 
-h2 {
-    text-align: center;
-    margin-bottom: 20px;
+.history {
+    border-left: 5px solid #000000; 
 }
 
-body.dark h2 {
-    color: #fff;
+.history2 {
+    border-left: 5px solid #000000; 
 }
 
-.productos {
-    display: flex;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
+.container-history {
+    margin: 3em;
+    display: flex; 
+    justify-content: space-between; 
+    flex-wrap: wrap; 
 }
 
-.lista-productos {
-    display: flex;
-    gap: 15px;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-    padding: 10px 0; 
-    white-space: nowrap;
+/* Estilos para los encabezados */
+.history h2, .history2 h2 {
+    color: #333; 
+    font-size: 1.8em;
+    margin-top: 0; 
+    margin-bottom: 20px; 
 }
 
-.caja_productos {
-    position: relative;
-    width: 320px; 
-    height: 8em; 
-    overflow: hidden;
-    border-radius: 16px;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-    flex: 0 0 auto; 
+/* Estilos para los párrafos */
+.history p, .history2 p {
+    font-size: 1em; 
+    color: #555; 
+    margin: 0;
 }
 
-.caja_productos:hover {
-    transform: scale(1.05);
-}
-
-.foto_producto {
-    border-radius: 16px;
-    overflow: hidden; 
-}
-
-.foto_producto img {
-    width: 100%;
-    height: auto; 
-    object-fit: cover;
-}
-
-.info_producto {
-    position: absolute;
-    height: 50%;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: #fff;
-    color: #000000;
-    font-family: Arial, Helvetica, sans-serif;
-    transform: translateY(100%);
-    transition: transform 0.3s ease;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    justify-content: center; 
-}
-
-.caja_productos:hover .info_producto {
-    transform: translateY(0);
-    bottom: 10%;
-}
-
-.title_product {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-.btn-ver-mas {
-    background: #000000;
-    color: #ffffff;
-    box-shadow: 0 0 5px rgba(0,0,0,0.5);
-    padding: 1px 20px;
-    margin-bottom: 0.5em;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-}
-
-.btn-ver-mas:hover {
-    background: #0056b3;
-}
-
-/* Botones de desplazamiento */
-.btn-scroll {
-    position: absolute;
-    top: 45%;
-    transform: translateY(-50%);
-    background: rgba(0, 0, 0, 0);
-    color: #ffffff;
-    border: none;
-    cursor: pointer;
-    font-size: 50px;
-    padding: 10px;
-    z-index: 10;
-    user-select: none; 
-    opacity: 0; 
-    transition: opacity 0.3s ease; 
-}
-
-.btn-scroll.show {
-    opacity: 1; 
-}
-
-.btn-scroll-left {
-    left: 10px;
-}
-
-.btn-scroll-right {
-    right: 10px; 
-}
-
-.lista-productos::-webkit-scrollbar {
-    width: 12px; 
-    height: 10px; 
-}
-
-.lista-productos::-webkit-scrollbar-track {
-    background-color: #f1f1f1;
-}
-
-.lista-productos::-webkit-scrollbar-thumb {
-    background-color: #888888; 
-    border-radius: 6px; 
-}
-
-.lista-productos::-webkit-scrollbar-thumb:hover {
-    background-color: #555555;
-}
-
-body.dark .lista-productos::-webkit-scrollbar {
-    width: 12px; 
-    height: 10px; 
-}
-
-body.dark .lista-productos::-webkit-scrollbar-track {
-    background-color: #111111; 
-}
-
-body.dark .lista-productos::-webkit-scrollbar-thumb {
-    background-color: #888888; 
-    border-radius: 6px;
-}
-
-body.dark .lista-productos::-webkit-scrollbar-thumb:hover {
-    background-color: #555555; 
-}
-
-
-/* ---------------------------- Shows Destacados ---------------------------- */
-
-.shows2 {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.show2-container {
-    background-color: #fff;
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-body.dark .show2-container {
-    background-color: #1e1e1e;
-}
-
-.show2-container img{
-box-shadow: 0px 0px 10px black;
-margin: 5px;
-}
-
-.productos2 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.caja_productos2 {
-    width: 100%;
-    margin: 20px auto;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.1);
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-body.dark .caja_productos2 {
-    background-color: #1e1e1e;
-}
-
-.foto_producto2 {
-    flex: 1;
-    margin-right: 18px;
-}
-
-.foto_producto2 img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.info_producto2 {
-    flex: 2;
-    padding: 20px;
-}
-body.dark .info_producto2 {
-    color: white;
-}
-
-.title_producto2 {
-    text-align: left;
-    margin-bottom: 10px;
-    font-size: 26px;
-    color: #333;
-    text-align: left;
+.history p, .history2 p {
     margin-bottom: 15px;
-    font-weight: 700;
-    line-height: 1.2;
-    border-bottom: 2px solid #333;  
-    padding-bottom: 10px;
 }
-body.dark .title_producto2 {
-    color: white;
-}
+
 
 /* ---------------------------- Footer ---------------------------- */
 
@@ -598,7 +402,7 @@ body.dark .title_producto2 {
     text-align: center;
 }
 body.dark .footer {
-    background-color: #050505;
+    background-color: #010101;
 }
 
 .footercontainer {
@@ -735,7 +539,7 @@ body.dark .footer-bottom {
         display: flex; 
     }
 
-    /* Barra de búsqueda y el switch debajo del menú centrados */
+    /* Estilos para centrar la barra de búsqueda y el switch debajo del menú en pantallas pequeñas */
     .header-actions {
         display: flex;
         flex-direction: column;
@@ -752,6 +556,7 @@ body.dark .footer-bottom {
         margin-bottom: 10px;
     }
 
+    /* Ajustes adicionales para asegurar el correcto alineamiento */
     .search-wrapper input[type="search"],
     .switch {
         margin: 5px 0;
