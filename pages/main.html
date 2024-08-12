@@ -1,1 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teatro Opera</title>
+    <link rel="stylesheet" href="../public/style.css">
+    <script src="https://kit.fontawesome.com/55ab9a7e05.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="../images/ico.ico" type="image/x-icon">
+    <script src="../public/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <a href="#" class="top-bar-item">Calendario</a>
+            <div class="separator"></div>
+            <a href="#" class="top-bar-item">Novedades</a>
+            <div class="separator"></div>
+            <a href="#" class="top-bar-item">Ayuda</a>
+            <div class="separator"></div>
+            <a id="auth-link" href="login.html">Iniciar sesión</a>
+            <a id="user-link" href="login.html" style="display: none;"><i class="fa fa-user"></i></a>
+            <span id="user-name" style="display: none;"></span>
+        </div>
+        <div class="back">
+            <div class="menu container">
+                <!-- Logo -->
+                <a href="main.html">
+                    <img src="../images/header/logo.png" class="logo-img" alt="Logo">
+                </a>
+                
+                <!-- Menu Toggle -->
+                <input type="checkbox" id="menu"/>
+                <label for="menu" class="menu-icono">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                
+                <!-- Navigation Bar -->
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="main.html">Inicio</a></li>
+                        <li class="dropdown">
+                            <a href="#shows" class="dropbtn">Cartelera</a>
+                            <div class="dropdown-content">
+                                <a href="#shows">Próximos shows</a>
+                                <a href="#shows2">Shows destacados</a>
+                                <a href="#">Shows</a>
+                            </div>
+                        </li>
+                        <li><a href="aboutus.html">El Teatro</a></li>
+                        <li><a href="https://maps.app.goo.gl/oSE14DjiAHJzYNKk7">¿Cómo llegar?</a></li>
+                    </ul>
+                    
+                    <!-- Search and Theme Switch -->
+                    <div class="head-icon-search">
+                        <div class="search-wrapper">
+                            <input type="search" placeholder="Buscar">
+                            <button type="button" class="search-icon">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>                    
+                    <button class="switch" id="switch">
+                        <span><i class="fa-solid fa-sun"></i></span>
+                        <span><i class="fa-solid fa-moon"></i></span>
+                    </button>
 
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="banner">
+        <label for="obra1">
+            <img src="../images/teatro.jpg" class="img-obra" alt="">
+        </label>    
+    </div>
+
+    <div class="shows" id="shows">
+        <div class="show-container">
+            <h2>Próximos Shows</h2>
+            <section class="productos">
+                <button class="btn-scroll btn-scroll-left">&#8249;</button>
+                <div class="lista-productos">
+                    <div class="caja_productos">
+                        <div class="foto_producto">
+                            <img src="../images/shows/obra2.jpg" alt="Homenaje Sinfónico Ennio Morricone">
+                            <div class="info_producto">
+                                <p class="title_product">Homenaje Sinfónico Ennio Morricone</p>
+                                <a href="#" class="btn-ver-mas">Ver Más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="caja_productos">
+                        <div class="foto_producto">
+                            <img src="../images/shows/obra3.jpg" alt="Los Nocheros Signos 25 años">
+                            <div class="info_producto">
+                                <p class="title_product">Los Nocheros Signos 25 años</p>
+                                <a href="#" class="btn-ver-mas">Ver Más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="caja_productos">
+                        <div class="foto_producto">
+                            <img src="../images/shows/obra4.jpg" alt="Averly Morillo Mesias">
+                            <div class="info_producto">
+                                <p class="title_product">Averly Morillo Mesias</p>
+                                <a href="#" class="btn-ver-mas">Ver Más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="caja_productos">
+                        <div class="foto_producto">
+                            <img src="../images/shows/obra5.jpg" alt="Los Nocheros Signos 25 años">
+                            <div class="info_producto">
+                                <p class="title_product">Los Nocheros Signos 25 años</p>
+                                <a href="#" class="btn-ver-mas">Ver Más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="caja_productos">
+                        <div class="foto_producto">
+                            <img src="../images/shows/obra6.jpg" alt="Los Nocheros Signos 25 años">
+                            <div class="info_producto">
+                                <p class="title_product">Los Nocheros Signos 25 años</p>
+                                <a href="#" class="btn-ver-mas">Ver Más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="caja_productos">
+                        <div class="foto_producto">
+                            <img src="../images/shows/obra7.jpg" alt="Los Nocheros Signos 25 años">
+                            <div class="info_producto">
+                                <p class="title_product">Los Nocheros Signos 25 años</p>
+                                <a href="#" class="btn-ver-mas">Ver Más</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn-scroll btn-scroll-right">&#8250;</button>
+            </section>
+        </div>
+    </div>
+    
+
+    <div class="shows2" id="shows2">
+        <div class="show2-container">
+            <br>
+            <h2>Shows Destacados</h2>
+            <section class="productos2">    
+                <div class="caja_productos2">
+                      <div class="foto_producto2">
+                          <img src="../images/shows/obra5.jpg" alt="">
+                      </div>
+                      <div class="info_producto2">
+                          <p class="title_producto2">Lisandro Aristimuño</p>
+                          <p class="desc_producto">Luego de realizar su tercer estadio Luna Park Lisandro Aristimuño se presenta en el Teatro Ópera de la Ciudad de Buenos Aires.A 20 años de "Azules Turquesas" su álbum debut, está recorriendo el país con la gira de "El Rostro de los Acantilados" su nuevo álbum considerado entre los 10 mejores discos del 2023 por la Revista Rolling Stone Argentina, con el que además ganó su noveno Premio Gardel en la categoría "Mejor Álbum Canción de Autor".</p>
+                      </div>
+                </div>
+                <div class="caja_productos2">
+                      <div class="foto_producto2">
+                          <img src="../images/shows/obra6.jpg" alt="">
+                      </div>
+                      <div class="info_producto2">
+                          <p class="title_producto2">Soy Rada Taran</p>
+                          <p class="desc_producto">Cada espectáculo nuevo de Agustin “Soy Rada” Aristarán es un hito imperdible en su prolífica carrera. En esta oportunidad, nos deleita con su nuevo espectáculo TARÁN, que recorrerá 10 provincias y más de 18 ciudades de nuestro país. <br> <br>
+                          Su último show REVUELTO fue galardonado con el premio Estrella de Mar a mejor espectáculo de humor de la temporada en Mar del Plata, y coronó el año (tras un recorrido de gira nacional, un Luna Park agotado y dos giras internacionales) ganando el premio ACE 2023, en la misma categoría.</p>
+                      </div>
+                </div>
+                <div class="caja_productos2">
+                      <div class="foto_producto2">
+                          <img src="../images/shows/obra7.jpg" alt="">
+                      </div>
+                      <div class="info_producto2">
+                          <p class="title_producto2">El Principito</p>
+                          <p class="desc_producto">Juan Carlos Baglietto junto a sus hijos Julián y Joaquín encabezan este proyecto que es una nueva versión musical de aquella que protagonizó el mismo Baglietto, 20 años atrás. <br> <br>
+                          Con Walas (Massacre), Roberto Catarineu, Carlos March, Flor Otero, Joaquín Baglietto, Zaina, Valentina Podio, y el debut de Luis Rodríguez Echeverría en el papel de El Principito.</p>
+                      </div>
+                </div>
+                <div class="caja_productos2">
+                    <div class="foto_producto2">
+                        <img src="../images/shows/obra4.jpg" alt="">
+                    </div>
+                    <div class="info_producto2">
+                        <p class="title_producto2">Averly Morillo Mesias</p>
+                        <p class="desc_producto">Averly Morillo se presentará el día viernes 23 de agosto en el Teatro Opera.</p>
+                    </div>
+              </div>
+              <div class="caja_productos2">
+                <div class="foto_producto2">
+                    <img src="../images/shows/obra1.jpg" alt="">
+                </div>
+                <div class="info_producto2">
+                    <p class="title_producto2"> Los de Imaguaré Viva el Chamamé</p>
+                    <p class="desc_producto">LOS DE IMAGUARÉ SE PRESENTARÁN EL DÍA VIERNES 2 DE AGOSTO EN EL TEATRO OPERA.</p>
+                </div>
+               </div>
+               <div class="caja_productos2">
+                <div class="foto_producto2">
+                    <img src="../images/shows/obra8.jpg" alt="">
+                </div>
+                <div class="info_producto2">
+                    <p class="title_producto2">Abraham Mateo</p>
+                    <p class="desc_producto">LA ESTRELLA POP DE ESPAÑA REGRESA AL PAÍS PARA PRESENTAR SU NUEVO ÁLBUM. EN EL MEJOR MOMENTO DE SU CARRERA, EL JURADO DE FACTOR X ABRAHAM MATEO, PROMETE EL SHOW MÁS IMPORTANTE DE SU CARRERA</p>
+                </div>
+               </div>
+              </section>
+        </div>
+    </div>
+
+    <footer class="footer">
+                <div class="socialIcons">
+                    <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a>
+                    <a href="https://www.x.com/"><i class="fa fa-x"></i></a>                    
+                    <a href="https://www.gmail.com/"><i class="fa fa-envelope"></i></a>
+                    <a href="https://www.whatsapp.com/"><i class="fa fa-whatsapp"></i></a>
+
+                </div>
+            <div class="footerNav">
+                <ul>
+                    <li><a href="main.html">Inicio</a></li>
+                    <li><a href="#shows">Cartelera</a></li>
+                    <li><a href="aboutus.html">Sobre Nosotros</a></li>
+                    <li><a href="https://maps.app.goo.gl/oSE14DjiAHJzYNKk7">¿Cómo llegar?</a></li>
+                </ul>
+            </div>
+        <div class="footer-bottom">
+            <small>&copy; 2024 <b>Teatro Opera</b> - Todos los Derechos Reservados.</small>  
+        </div>
+    </footer>
+    
+</body>
+</html>
